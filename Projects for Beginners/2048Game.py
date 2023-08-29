@@ -156,8 +156,7 @@ clearScr()
 print("""Welcome to the 2048.
 Simply move the tiles swiping on the board.
 Tow tiles with the same number merge when
-they touch. Reach the 2048 tile to win!
-
+they touch. Reach the 2048 tile to win!\n
 Tile Movement
 Swiping up type: w
 Swiping down type: s
