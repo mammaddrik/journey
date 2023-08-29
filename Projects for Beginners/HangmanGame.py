@@ -8,7 +8,7 @@ import random
 
 
 def clearScr():
-    "A Function TO Clean Up The Command Prompt or Terminal."
+    "A Function To Clean Up The Command Prompt or Terminal."
     if (os.name == "nt"):
         os.system("cls")
     else:
