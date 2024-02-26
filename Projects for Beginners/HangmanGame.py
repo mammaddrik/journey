@@ -6,14 +6,13 @@
 import os
 import random
 
-
 def clearScr():
     "A Function To Clean Up The Command Prompt or Terminal."
     if (os.name == "nt"):
         os.system("cls")
     else:
         os.system("clear")
-        
+
 clearScr()
 someWords = "apple orange cherry banana grape papaya mango strawberry lemon peach lychee coconut"
 someWords = someWords.split(" ")
@@ -42,19 +41,19 @@ try:
                 clearScr()
                 print("Enter only a letter!")
                 turns -= 1
-                print(f"You have {turns} more guess")
+                print(f"You have {turns} more guess.")
                 continue
             elif guess not in word:
                 clearScr()
                 turns -= 1
                 print("Enter only a letter!")
-                print(f"You have {turns} more guess")
+                print(f"You have {turns} more guess.")
                 if turns == 0:
                     clearScr()
                     print(f"The word was: {word}")
             elif guess in guesses:
                 clearScr()
-                print("You have already guessed that letter.p")
+                print(f"You have already guessed that letter {guess}.")
                 print(f"You have {turns} more guess")
             else:
                 clearScr()
